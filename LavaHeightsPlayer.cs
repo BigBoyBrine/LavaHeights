@@ -35,9 +35,7 @@ namespace LavaHeights
         {
             if (isSlimed)
             {
-                var newSpeed = slimedSpeed(player.accRunSpeed, player.maxRunSpeed);
-                player.accRunSpeed = newSpeed.Key;
-                player.maxRunSpeed = newSpeed.Value;
+                
             }
         }
 
@@ -59,11 +57,6 @@ namespace LavaHeights
         #endregion Overriden Methods
 
         #region Private Methods
-
-        private KeyValuePair<float, float> slimedSpeed(float accSpeed, float maxSpeed)
-        {
-            return new KeyValuePair<float, float>( accSpeed * 0.6f, maxSpeed * 0.6f );
-        }
 
         #endregion Private Methods
     }
